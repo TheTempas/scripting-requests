@@ -8,7 +8,6 @@ function getAndPrintHTML () {
   };
   https.get(requestOptions, function (response) {
     response.setEncoding('utf8');
-
       response.on('data', function (data) {
         output += data;
         console.log(data);
